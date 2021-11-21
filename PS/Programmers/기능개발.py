@@ -1,4 +1,4 @@
-#스택,큐 Level2
+#스택,큐Level2
 
 def solution(progresses, speeds):
     progresses = [math.ceil((100 - p) / s) for p, s in zip(progresses, speeds)]

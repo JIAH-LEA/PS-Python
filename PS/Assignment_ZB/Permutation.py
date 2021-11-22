@@ -7,7 +7,7 @@ import math
 def solution(n,k):
   n_arr = []
   result=[]
-  
+ 
   for i in range(1,n+1):
      n_arr.append(i)
 
@@ -18,12 +18,11 @@ def solution(n,k):
 
   return result
 
+print(solution(3,3)) # [2,1,3]
+print(solution(4,9)) # [2,3,1,4]
 
 
-print(solution(3,3))
-print(solution(4,9))
-
-
-
-print(solution(3,3))
-print(solution(4,9))
+# for문을 이용하여 배열에 삽입 시 다음과 같이 간략하게도 사용 가능함
+  #seq = [i for i in range(1,n+1)]
+  #perm = list(itertools.permutations(seq))
+  #result = [item for item in perm[k-1]]
